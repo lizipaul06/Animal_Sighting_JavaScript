@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>  Cute Animal List  </title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <h1 class="page-title"> The cute animals seen </h1>
+    <div class="bg-img">
+    <form class="new-item-form" id="new-item-form" action="index.html" method="post">
+      <div class="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name:</label>
+          <input type="text" id="name">
+        </div>
+
+        <div class="form-item">
+          <label for="type" class="primary">Type: </label>
+          <select class="form-item" id="type" value="Pet Type">
+            <option value="" disabled selected></option>
+            <option >Dog 🐶</option>
+            <option >Cat 🐱</option>
+            <option >Bird 🦜</option>
+            <option >Rabbit 🐇</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label for="breed" class="primary"> Breed: </label>
+          <input type="test" id="breed" >
+        </div>
+
+        <div class="form-item">
+          <input type="radio" id="not_fluffy" name="fluffiness" value="Not fluffy">
+        <label for="not_fluffy"> Not Fluffy </label><br>
+        <input type="radio" id="fluffy" name="fluffiness" value="Fluffy">
+        <label for="fluffy">Fluffy</label><br>
+          <input type="radio" id="Super_fluffy" name="fluffiness" value="Super fluffy">
+        <label for="Super_fluffy">Super Fluffy</label><br>
+
+      </div>
+      <div class="form-item">
+        <label for="colour" class="primary">Color:</label>
+        <input type="color" id="colour">
+      </div>
+
+        </div>
+        <input type="submit" value="Add your pet">
+        <input type="reset">
+    </form>
+  </div>
+    <h1 class="page-title"> Your animal list </h1>
+
+ <div class="form-wrapper">
+    <ul class="animal-list" id="animal-list"> </ul>
+
+
+
+</div>
+      <button  id="delete-all">   Delete entries  </button>
+
+  </body>
+</html>
