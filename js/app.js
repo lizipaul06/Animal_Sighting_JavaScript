@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fluffiness = document.createElement('p')
     const animalCute = form.fluffiness.value
-    fluffiness.textContent = 'Fluffiness:  ' + animalCute.toString();
+    fluffiness.textContent = 'Fluffiness: ' + animalCute.toString();
     listItem.appendChild(fluffiness);
 
 
@@ -49,6 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return listItem;
 
   }
+
+
+
+
 
   const handleDeleteAllClick = function (event) {
     const animalList = document.querySelector('#animal-list');
