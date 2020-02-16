@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>  Animal List  </title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/app.js"></script>
-  </head>
-  <body>
+  <title>  Animal List  </title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
 
-    <div class="bg-img">
-      <div class="head-title">
-<h1 >  Wildlife seen </h1>
-</div>
+  <div class="bg-img">
+    <div class="head-title">
+      <h1 >  Wildlife seen </h1>
     </div>
-     <h1 class="page-title"> Your animal list </h1>
- <div id="box">
+  </div>
+  <h1 class="page-title"> Your animal list </h1>
+  <div id="box">
 
-   <div id="item">
+    <div id="item">
 
-    <form class="new-item-form" id="new-item-form" action="index.html" method="post">
-      <div class="form-wrapper">
-        <div class="form-item">
-          <label for="name" class="primary">Name:</label>
-          <input type="text" id="name">
-        </div>
+      <form class="new-item-form" id="new-item-form" action="index.html" method="post">
+        <div class="form-wrapper">
+          <div class="form-item">
+            <label for="Animal" class="primary">Animal:</label>
+            <input type="text" id="animal">
+          </div>
 
-        <div class="form-item">
-          <label for="type" class="primary">Type: </label>
-          <select class="form-item" id="type" value="Pet Type">
-            <option value="" disabled selected></option>
-            <option >Dog 🐶</option>
-            <option >Cat 🐱</option>
-            <option >Bird 🦜</option>
-            <option >Rabbit 🐇</option>
-          </select>
-        </div>
-        <div class="form-item">
-          <label for="breed" class="primary"> Breed: </label>
-          <input type="test" id="breed" >
-        </div>
+          <div class="form-item">
+            <label for="habitat" class="primary">Habitat: </label>
+            <select class="form-item" id="habitat" >
+              <option value="" disabled selected></option>
+              <option >Woodland</option>
+              <option >Beach</option>
+              <option >Grassland</option>
+              <option >City</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="time" class="primary"> Time: </label>
+            <input type="time" id="time" >
+          </div>
+          <div class="form-item">
+            <label for="date" class="primary"> Date: </label>
+            <input type="date" id="date" >
+          </div>
 
-        <div class="form-item">
-          <input type="radio" id="not_fluffy" name="fluffiness" value="Not fluffy">
-        <label for="not_fluffy"> Not Fluffy </label><br>
-        <input type="radio" id="fluffy" name="fluffiness" value="Fluffy">
-        <label for="fluffy">Fluffy</label><br>
-          <input type="radio" id="Super_fluffy" name="fluffiness" value="Super fluffy">
-        <label for="Super_fluffy">Super Fluffy</label><br>
 
-      </div>
-      <div class="form-item">
-        <p><input type="file"  accept="image/*" name="image" id="file"  style="display: none;"></p>
-  <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+          <div class="form-item">
+            <input type="radio" id="not_friendly" name="friend" value="Not Friendly">
+            <label for="not_friendly"> Not Friendly </label><br>
+            <input type="radio" id="friendly" name="friend" value="Friendly">
+            <label for="friendly">Friendly</label><br>
+            <input type="radio" id="Super_friendly" name="friend" value="Super friendly">
+            <label for="Super_friendly">Super Friendly</label><br>
 
-      </div>
+          </div>
+
 
         </div>
         <input type="submit" value="Add your pet">
         <input type="reset">
-    </form>
+      </form>
+    </div>
+    <div class="item">
+
+
+      <div class="form-wrapper">
+        <ul class="animal-list" id="animal-list"> </ul>
+
+
+
+      </div>
+
+
+    </div>
   </div>
-<div class="item">
-
-
- <div class="form-wrapper">
-    <ul class="animal-list" id="animal-list"> </ul>
-
-
-
-</div>
-
-
-</div>
-</div>
-<button  id="delete-all">   Delete entries  </button>
-  </body>
+  <button  id="delete-all">   Delete entries  </button>
+</body>
 </html>

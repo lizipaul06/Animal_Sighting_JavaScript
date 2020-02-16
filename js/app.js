@@ -7,54 +7,56 @@ document.addEventListener('DOMContentLoaded', () => {
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
-  const handleNewItemFormSubmit = function (event) {
-    event.preventDefault();
+const handleNewItemFormSubmit = function (event) {
+  event.preventDefault();
 
-    const ListItem = createAnimalListItem(event.target);
-    const animalList = document.querySelector('#animal-list');
-    animalList.appendChild(ListItem);
+  const ListItem = createAnimalListItem(event.target);
+  const animalList = document.querySelector('#animal-list');
+  animalList.appendChild(ListItem);
 
-  }
-
-
-  const createAnimalListItem = function(form) {
-
-    //create li element
-    const listItem = document.createElement('li');
-    listItem.classList.add('animal-list-item');
+}
 
 
-    const name= document.createElement('p')
-    const animalName = form.name.value
-    name.textContent = 'Name:  ' + animalName.toString();
-    listItem.appendChild(name);
+const createAnimalListItem = function(form) {
 
-    const type = document.createElement('p')
-    const animalType = form.type.value
-    type.textContent = 'Type:  ' + animalType.toString();
-    listItem.appendChild(type);
-
-    const breed = document.createElement('p')
-    const animalBreed = form.breed.value
-    breed.textContent = 'Breed:  ' + animalBreed.toString();
-    listItem.appendChild(breed);
-
-    const fluffiness = document.createElement('p')
-    const animalCute = form.fluffiness.value
-    fluffiness.textContent = 'Fluffiness: ' + animalCute.toString();
-    listItem.appendChild(fluffiness);
+  //create li element
+  const listItem = document.createElement('li');
+  listItem.classList.add('animal-list-item');
 
 
+  const animal= document.createElement('p')
+  const animalName = form.animal.value
+  animal.textContent = 'Animal:  ' + animalName.toString();
+  listItem.appendChild(animal);
 
-    return listItem;
+  const habitat = document.createElement('p')
+  const animalHabitat = form.habitat.value
+  habitat.textContent = 'Habitat:  ' + animalHabitat.toString();
+  listItem.appendChild(habitat);
 
-  }
+  const date = document.createElement('p')
+  const animalDate = form.date.value
+  date.textContent = 'Date:  ' + animalDate.toString();
+  listItem.appendChild(date);
+
+  const time = document.createElement('p')
+  const animalTime = form.time.value
+  time.textContent = 'Time:  ' + animalTime.toString();
+  listItem.appendChild(time);
+
+  const friend = document.createElement('p')
+  const animalFriend = form.friend.value
+  friend.textContent = 'Friendliness: ' + animalFriend.toString();
+  listItem.appendChild(friend);
+
+
+  return listItem;
+
+}
 
 
 
-
-
-  const handleDeleteAllClick = function (event) {
-    const animalList = document.querySelector('#animal-list');
-    animalList.innerHTML = '';
-  }
+const handleDeleteAllClick = function (event) {
+  const animalList = document.querySelector('#animal-list');
+  animalList.innerHTML = '';
+}
